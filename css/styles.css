@@ -56,7 +56,12 @@ li {
 }
 #main-nav li {
   float: left;
-  width: 14%;
+  width: 16.6666666667%;
+}
+@media screen and (max-width: 600px) {
+  #main-nav li {
+    width: 100%;
+  }
 }
 #main-nav a {
   color: #f8f9fb;
@@ -66,7 +71,7 @@ li {
   text-align: center;
 }
 #main-nav a:hover {
-  background: #333;
+  background: #04455b;
 }
 
 section h1 {
@@ -94,6 +99,11 @@ section h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 3000px) and (min-width: 1200px) {
+  .lead-banner span {
+    font-size: 68px;
+  }
+}
 .lead-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -118,6 +128,11 @@ section h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 3000px) and (min-width: 1200px) {
+  .lessons-banner span {
+    font-size: 68px;
+  }
+}
 .lessons-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -127,4 +142,45 @@ section h1 {
   font-size: 20px;
   max-width: 500px;
   margin: 60px 0;
+}
+
+#services {
+  margin-bottom: 60px;
+}
+#services li {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  width: 33.3333333333%;
+}
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+#services a {
+  text-decoration: none;
+  color: #032f3e;
+  font-weight: bold;
+}
+#services a:hover {
+  color: red;
+}
+#services ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#projects li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%;
+}
+#projects li:nth-child(4n) {
+  margin-right: 0;
+}
+#projects li img {
+  width: 100%;
 }
